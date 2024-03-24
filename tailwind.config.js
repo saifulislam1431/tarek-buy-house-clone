@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'selector',
   content: [
     "node_modules/flowbite-react/lib/esm/**/*.js",
     "./node_modules/flowbite/**/*.js",
@@ -9,7 +10,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'primary': '#fcb900',
+      'primary': '#d9821b',
       'secondary': '#ff6900',
       'accent': '#0693e3',
       'error': '#cf2e2e',

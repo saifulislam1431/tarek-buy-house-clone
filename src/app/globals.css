@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navBorder {
+  width: 150px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 60px;
+  background: #ffffff;
+  color: #4C4847;
+  padding: 0px 10px;
+  border-right: 1px solid #a5a3a242;
+  border-left: 1px solid #ffffff;
+  transform: skewX(-20deg);
+}
+
+.navBorder:nth-child(1) {
+  width: 220px;
+  background: #4C4847;
+  color: #ffffff;
+  border-right: 1px solid #4C4847;
+  border-left: 1px solid #4C4847;
+}
+
+.navBorder:nth-child(3) {
+  width: 190px;
+}
+
+.navBorder:nth-child(4) {
+  width: 120px;
+}
+
+.navBorder:nth-child(5) {
+  width: 100px;
+}
+
+.navBorder:hover {
+  color: #d9821b;
+}
+
+.nav-text {
+  transform: skewX(20deg);
+}
+
+.navBorder.active {
+  background: #d9821b;
+  color: #fff;
+}
+
+.menu-icon {
+  width: 35px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-icon span {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: #d9821b;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Animation classes */
+.menu-icon.open span:nth-child(1) {
+  transform: translateY(12.5px) rotate(45deg);
+  background: #e60e2b;
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+  background: #e60e2b;
+}

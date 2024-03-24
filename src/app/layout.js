@@ -13,13 +13,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" date-theme="dark">
       <head>
         <ThemeModeScript />
       </head>
       <body className={inter.className}>
 
-        <header>
+        <header className="sticky top-0 z-50">
           <Navbar />
         </header>
 

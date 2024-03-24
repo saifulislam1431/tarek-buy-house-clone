@@ -1,10 +1,11 @@
-import { Button } from "flowbite-react";
-import Image from "next/image";
+import Banner from "@/components/HomeComponent/Banner/Banner";
+import PartnerContainer from "@/components/HomeComponent/PartnerContainer/PartnerContainer";
 
 export default function Home() {
   return (
-    <div>
-      <Button className="bg-primary">Click me</Button>
-    </div>
+    <section>
+      <Banner />
+      <PartnerContainer />
+    </section>
   );
 }
