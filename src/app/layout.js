@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeModeScript } from "flowbite-react";
+import Provider from "@/utils/Provider/Provider";
+import Navbar from "@/components/Shared/Navbar/Navbar";
+import Footer from "@/components/Shared/Footer/Footer";
+import { inter } from "./fonts";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +14,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <ThemeModeScript />
+      </head>
+      <body className={inter.className}>
+
+        <header>
+          <Navbar />
+        </header>
+
+        <Provider>
+          {children}
+        </Provider>
+
+
+        <Footer />
+      </body>
     </html>
   );
 }
