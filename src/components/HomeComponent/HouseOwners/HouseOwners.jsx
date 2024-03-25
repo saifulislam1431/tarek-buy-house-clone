@@ -8,7 +8,7 @@ import { FaPlayCircle } from 'react-icons/fa';
 
 const HouseOwners = () => {
     return (
-        <section className='my-16'>
+        <section className='mt-16 bg-white'>
             <div className='relative flex items-center flex-col justify-center'>
                 <div className='w-full bg-primary text-center py-10 z-10'>
                     <h1 className='font-bold text-white text-3xl'>Homeowners love working with Tarek Buys Houses!</h1>
