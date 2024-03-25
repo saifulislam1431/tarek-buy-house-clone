@@ -41,9 +41,9 @@ const Navbar = () => {
     </div>
 
     return (
-        <nav className='bg-base-100 px-2 relative flex items-center justify-between lg:items-start'>
+        <nav className='bg-base-100 px-2 relative flex items-center justify-between lg:items-start gap-10'>
             {/* logo */}
-            <Link href="/">
+            <Link href="/" className="2xl:w-[250px]">
                 <Image src={logo} alt='logo' className=' w-32 lg:w-40' />
             </Link>
 
@@ -63,37 +63,39 @@ const Navbar = () => {
                             <Image src={rating} alt='Rating' className='w-12' />
                         </div>
                     </ul> : <ul className='w-full flex items-center justify-center'>
-                        <li className="navBorder">
-                            <Link href="#" className="flex items-center gap-2 h-full justify-center nav-text">
+                        <li className="navBorder w-1/2 xl:w-full">
+                            <Link href="#" className="flex items-center gap-2 h-full justify-center nav-text lg:text-sm 2xl:text-2xl">
                                 <FaPhoneAlt className="text-[#d9821b]" /> <span className="font-extrabold">(866) 419-4117</span>
                             </Link>
                         </li>
-                        <li className={`navBorder ${path === "/about-us" && "active"}`}>
+                        <li className={`navBorder w-2/4 ${path === "/about-us" && "active"}`}>
                             <Link href="/about-us" className="flex items-center gap-2 h-full justify-center nav-text">
                                 About Us
                             </Link>
                         </li>
-                        <li className={`navBorder ${path === "/our-process" && "active"}`}>
+                        <li className={`navBorder w-2/4 ${path === "/our-process" && "active"}`}>
                             <Link href="/our-process" className="flex items-center gap-2 h-full justify-center nav-text">
                                 Our Process
                             </Link>
                         </li>
-                        <li className={`navBorder ${path === "/blog" && "active"}`}>
+                        <li className={`navBorder w-2/4 ${path === "/blog" && "active"}`}>
                             <Link href="/blog" className="flex items-center gap-2 h-full justify-center nav-text">
                                 Blog
                             </Link>
                         </li>
-                        <li className={`navBorder ${path === "/faq" && "active"}`}>
+                        <li className={`navBorder w-2/4 ${path === "/faq" && "active"}`}>
                             <Link href="/faq" className="flex items-center gap-2 h-full justify-center nav-text">
                                 FAQ
                             </Link>
                         </li>
-                        <li className='inline-flex items-center gap-3 pl-8'>
-                            <Link href="/" className="text-white bg-primary px-4 py-2 font-semibold text-sm hover:bg-[#9b5d12] transition-all duration-300">
+                        <li className='inline-flex items-center gap-8 pl-8 w-full justify-center'>
+                            <Link href="/" className="text-white bg-primary px-4 py-2 font-semibold text-sm hover:bg-[#9b5d12] transition-all duration-300 w-full text-center">
                                 Get My Free Offer
                             </Link>
 
-                            <Image src={rating} alt='Rating' className='w-12' />
+                            <div className="w-20 2xl:w-full">
+                                <Image src={rating} alt='Rating' className='w-16' />
+                            </div>
                         </li>
                     </ul>
                 }
