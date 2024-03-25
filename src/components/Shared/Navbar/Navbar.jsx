@@ -41,10 +41,10 @@ const Navbar = () => {
     </div>
 
     return (
-        <nav className='bg-base-100 px-2 relative flex items-center justify-between lg:items-start gap-10'>
+        <nav className='bg-base-100 px-2 relative flex items-center justify-between lg:items-start gap-10 py-3 lg:py-0'>
             {/* logo */}
             <Link href="/" className="2xl:w-[250px]">
-                <Image src={logo} alt='logo' className=' w-32 lg:w-40' />
+                <Image src={logo} alt='logo' className='      w-28 lg:w-40' />
             </Link>
 
             {/* Larger menu */}
@@ -129,7 +129,7 @@ const Navbar = () => {
 
             <div className="lg:hidden">
                 <Link href="#" className="inline-flex items-center gap-1 bg-[#d9821b] text-white px-4 py-1 rounded">
-                    <FaPhoneAlt /> <span className="font-extrabold">(866) 419-4117</span>
+                    <FaPhoneAlt /> <span className="font-extrabold text-sm text-nowrap">(866) 419-4117</span>
                 </Link>
             </div>
             <div className="lg:hidden">
