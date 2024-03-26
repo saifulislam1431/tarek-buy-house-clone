@@ -1,6 +1,7 @@
 import Advantage from "@/components/HomeComponent/Advantage/Advantage";
 import Banner from "@/components/HomeComponent/Banner/Banner";
 import ChooseTarekBuy from "@/components/HomeComponent/ChooseTarekBuy/ChooseTarekBuy";
+import FAQ from "@/components/HomeComponent/FAQ/FAQ";
 import HouseOwners from "@/components/HomeComponent/HouseOwners/HouseOwners";
 import PartnerContainer from "@/components/HomeComponent/PartnerContainer/PartnerContainer";
 import Specialities from "@/components/HomeComponent/Specialities/Specialities";
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonial />
       <ChooseTarekBuy />
       <Specialities />
+      <FAQ />
     </section>
   );
 }

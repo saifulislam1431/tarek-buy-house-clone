@@ -1,0 +1,10 @@
+/* .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease-out;
+}
+
+.accordion-content.open {
+    max-height: fit-content;
+    transition: max-height 2s ease-in;
+} */
