@@ -3,6 +3,7 @@ import Banner from "@/components/HomeComponent/Banner/Banner";
 import ChooseTarekBuy from "@/components/HomeComponent/ChooseTarekBuy/ChooseTarekBuy";
 import HouseOwners from "@/components/HomeComponent/HouseOwners/HouseOwners";
 import PartnerContainer from "@/components/HomeComponent/PartnerContainer/PartnerContainer";
+import Specialities from "@/components/HomeComponent/Specialities/Specialities";
 import Testimonial from "@/components/HomeComponent/Testimonial/Testimonial";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <HouseOwners />
       <Testimonial />
       <ChooseTarekBuy />
+      <Specialities />
     </section>
   );
 }
