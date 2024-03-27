@@ -131,7 +131,7 @@ const OurProcessPage = () => {
 
             <div className='mb-14 bg-white py-16 flex items-center justify-center flex-col gap-14'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-12 w-[95%] lg:w-[85%] mx-auto'>
-                    <div className="w-full flex flex-col items-center justify-start text-center py-8 px-5 shadow-md h-[550px]">
+                    <div className="w-full flex flex-col items-center justify-start text-center py-8 px-5 shadow-md h-[650px]">
                         <div className="flex items-center flex-col">
                             <h1 className="font-semibold text-[22px] text-primary">&rdquo;They made it completely stress free!&rdquo;</h1>
                             <p className="border-b border-primary w-48 h-1 pb-5"></p>
@@ -142,7 +142,7 @@ const OurProcessPage = () => {
                         <p className="pb-10 font-bold text-xl">Carlos S. – San Diego, CA</p>
                     </div>
 
-                    <div className="w-full flex flex-col items-center justify-start text-center py-8 px-5 shadow-md h-[550px]">
+                    <div className="w-full flex flex-col items-center justify-start text-center py-8 px-5 shadow-md h-[650px]">
                         <div className="flex items-center flex-col">
                             <h1 className="font-semibold text-[22px] text-primary">&rdquo;The best service I&apos;ve ever had!&rdquo;</h1>
                             <p className="border-b border-primary w-48 h-1 pb-5"></p>
@@ -153,7 +153,7 @@ const OurProcessPage = () => {
                         <p className="pb-10 font-bold text-xl">Gina P. – Riverside, CA</p>
                     </div>
 
-                    <div className="w-full flex flex-col items-center justify-start text-center py-8 px-5 shadow-md h-[550px]">
+                    <div className="w-full flex flex-col items-center justify-start text-center py-8 px-5 shadow-md h-[650px]">
                         <div className="flex items-center flex-col">
                             <h1 className="font-semibold text-[22px] text-primary">&rdquo;It was a pleasure working with you&rdquo;</h1>
                             <p className="border-b border-primary w-48 h-1 pb-5"></p>
