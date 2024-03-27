@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 15px;
+}
+
+th {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.repairHeading {
+    background: #333;
+}
+
+.costHeading {
+    background-color: #D9821B;
+}
+
+.tableValue {
+    color: #D9821B;
+}
+
+.tableLable {
+    color: #333;
+}
+
+td {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+tr:nth-child(odd) {
+    background-color: hsla(0, 0%, 50.2%, .0705882353);
+}
+
+tr:nth-child(even):hover {
+    background-color: hsla(0, 0%, 50.2%, .0705882353);
+}
