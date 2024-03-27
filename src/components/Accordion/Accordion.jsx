@@ -4,14 +4,14 @@ import "./accordion.css"
 import React, { useState } from 'react';
 import { FaArrowDown, FaArrowUp } from 'react-icons/fa6';
 
-const Accordion = ({ sections }) => {
+const Accordion = ({ sections, width }) => {
     const [openIndex, setOpenIndex] = useState(0);
 
     const toggleSection = index => {
         setOpenIndex(index === openIndex ? -1 : index);
     };
     return (
-        <div className="accordion w-full max-w-2xl mx-auto flex flex-col gap-4 bg-[rgb(245,245,245)] shadow-lg">
+        <div className={`accordion w-full  mx-auto flex flex-col gap-4 bg-[rgb(245,245,245)] shadow-lg ${width ? width : "max-w-2xl"}`}>
             {sections?.map((section, index) => (
                 <div key={index} className="accordion-section cursor-pointer">
                     <div
@@ -29,7 +29,7 @@ const Accordion = ({ sections }) => {
 
 
                         <div
-                            className={`accordion-content w-full bg-[#ffffff] p-7 text-[15px] transition-all duration-1000`}
+                            className={`accordion-content`}
                         >
                             {section.content}
                         </div>

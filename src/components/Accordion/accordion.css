@@ -1,10 +1,11 @@
-/* .accordion-content {
-    max-height: 0;
+.accordion-section {
     overflow: hidden;
-    transition: max-height 2s ease-out;
 }
 
-.accordion-content.open {
-    max-height: fit-content;
-    transition: max-height 2s ease-in;
-} */
+.accordion-content {
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    padding: 28px;
+}
