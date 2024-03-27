@@ -27,13 +27,24 @@ const HouseOwnerVideo = ({ isOpen, id, url }) => {
                     </div>
                 </Modal.Body>
 
-                <div className="absolute lg:-top-12 lg:-right-10">
+                <div className="absolute lg:-top-12 lg:-right-10 hidden lg:flex">
                     <Button onClick={() => setOpenModal({
                         isOpen: false,
                         id: "0"
                     })}>
                         <FaXmark className="h-6 w-6 text-red-600" />
                     </Button>
+
+                </div>
+
+                <div className="absolute -bottom-20 right-[40%] lg:hidden">
+                    <button className="bg-red-600 p-3 rounded-full text-white hover:bg-white hover:text-red-600" onClick={() => setOpenModal({
+                        isOpen: false,
+                        id: "0"
+                    })}>
+                        <FaXmark className="h-10 w-10" />
+                    </button>
+
                 </div>
             </Modal>
         </div>
