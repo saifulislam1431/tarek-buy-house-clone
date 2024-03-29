@@ -63,7 +63,7 @@ const OurProcessPage = () => {
             </div>
 
             <div className='mt-14 mb-28 flex items-center justify-center'>
-                <button className='w-60 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg'>Learn More</button>
+                <button className='w-60 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural'>Learn More</button>
             </div>
 
             {/* Promise */}
@@ -125,7 +125,7 @@ const OurProcessPage = () => {
                     <h1 className='font-bold text-white text-3xl'>See what sellers say about Tarek Buys Houses!...</h1>
                 </div>
                 <div className='absolute top-28 lg:top-20'>
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" x="0" y="0" version="1.1" viewBox="0 0 487.272 487.272" width="50" height="50"><path d="M468.018 196.707 289.885 18.573c-26.341-23.625-66.246-23.625-92.587 0L19.165 196.493c-25.554 25.573-25.554 67.014 0 92.587L197.298 467a63.997 63.997 0 0 0 46.293 19.413 64 64 0 0 0 46.293-18.987l178.133-178.133.267-.267c25.421-25.567 25.302-66.9-.266-92.319z" fill="url(&quot;#SvgjsLinearGradient1063&quot;)"></path><defs><linearGradient id="SvgjsLinearGradient1063"><stop stop-color="#d9821b" offset="0"></stop><stop stop-color="#d9821b" offset="1"></stop></linearGradient></defs></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" x="0" y="0" version="1.1" viewBox="0 0 487.272 487.272" width="50" height="50"><path d="M468.018 196.707 289.885 18.573c-26.341-23.625-66.246-23.625-92.587 0L19.165 196.493c-25.554 25.573-25.554 67.014 0 92.587L197.298 467a63.997 63.997 0 0 0 46.293 19.413 64 64 0 0 0 46.293-18.987l178.133-178.133.267-.267c25.421-25.567 25.302-66.9-.266-92.319z" fill="url(&quot;#SvgjsLinearGradient1063&quot;)"></path><defs><linearGradient id="SvgjsLinearGradient1063"><stop stopColor="#d9821b" offset="0"></stop><stop stopColor="#d9821b" offset="1"></stop></linearGradient></defs></svg>
                 </div>
             </div>
 
@@ -205,7 +205,7 @@ const OurProcessPage = () => {
                             <h1 className='text-[#3c3838] font-bold text-lg text-center'>Need To Sell Quickly? We Buy Properties In ANY Condition For All Cash. Get An Offer Within 24 Hours!</h1>
 
                             <div className='mt-6 flex items-center justify-center'>
-                                <button className='w-60 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg uppercase'>Get your Offer</button>
+                                <button className='w-60 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural uppercase'>Get your Offer</button>
                             </div>
                         </div>
                     </div>
@@ -360,7 +360,7 @@ const OurProcessPage = () => {
                 </div>
 
                 <div className='mt-6 flex items-center justify-center'>
-                    <button className='w-72 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg'>Get Started</button>
+                    <button className='w-72 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural'>Get Started</button>
                 </div>
             </div>
 

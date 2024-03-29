@@ -2,7 +2,6 @@ import Accordion from '@/components/Accordion/Accordion';
 import React from 'react';
 
 const FAQ = () => {
-
     const sections = [
         {
             title: 'Are you listing my house on the MLS or buying it? ',

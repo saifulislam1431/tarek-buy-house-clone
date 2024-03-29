@@ -1,14 +1,17 @@
 'use client'
 
 import { FaPhoneAlt } from "react-icons/fa";
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import logo from "../../../../public/assets/logo/TBH-logo-primary.webp"
 import rating from "../../../../public/assets/logo/header-cert.webp"
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
+import useShake from "@/hooks/useShake";
+import { ParentContext } from "@/utils/Provider/Provider";
 
 const Navbar = () => {
+    const { setShake, shake } = useContext(ParentContext);
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const path = usePathname();
@@ -40,58 +43,68 @@ const Navbar = () => {
         <span></span>
     </div>
 
+
+    const handleShake = () => {
+        setShake(!shake)
+    }
+
+
     return (
-        <nav className='bg-base-100 px-2 relative flex items-center justify-between lg:items-start gap-10 py-3 lg:py-0'>
+        <nav className='bg-base-100 px-2 relative flex items-center justify-between lg:items-start gap-10 py-3 lg:py-0 h-[75px]'>
             {/* logo */}
             <Link href="/" className="2xl:w-[250px]">
                 <Image src={logo} alt='logo' className='      w-28 lg:w-40' />
             </Link>
 
             {/* Larger menu */}
-            <div className='w-full hidden lg:flex'>
+            <div className='w-full hidden lg:flex h-full'>
                 {
-                    isScrolled ? <ul className='w-full flex items-center justify-evenly py-3'>
-                        <div className="flex gap-3">
-                            <input type="text" placeholder="Enter your home address" className="px-3 py-2 rounded-md outline-none border border-neutral w-96 focus:outline-none focus:border-none" />
-                            <input type="submit" className="text-white bg-primary px-4 py-2 font-semibold text-sm hover:bg-[#9b5d12] transition-all duration-300 rounded-md" value="Get My Free Offer" />
+                    isScrolled ? <ul className='w-full flex items-center justify-between py-3'>
+                        <div className="flex gap-3 w-full max-w-5xl justify-end">
+                            <input type="text" placeholder="Enter your home address" className="px-3 py-2 rounded-md outline-none border border-neutral w-full max-w-lg focus:outline-none focus:border-none" />
+                            <input type="submit" className="text-white bg-primary px-14 py-2 font-semibold text-sm hover:bg-[#9b5d12] transition-all duration-300 rounded-md" value="Get My Free Offer" onSubmit={handleShake} />
                         </div>
 
-                        {menuIcon}
+                        <div className="w-full max-w-[500px] flex items-center justify-between px-20">
+                            <div>
+                                {menuIcon}
+                            </div>
 
 
-                        <div>
-                            <Image src={rating} alt='Rating' className='w-12' />
+                            <div className="flex">
+                                <Image src={rating} alt='Rating' className='w-12' />
+                            </div>
                         </div>
-                    </ul> : <ul className='w-full flex items-center justify-center'>
-                        <li className="navBorder w-1/2 xl:w-full">
+                    </ul> : <ul className='w-full flex items-center justify-center h-full'>
+                        <li className="navBorder h-full w-1/2 xl:w-full">
                             <Link href="#" className="flex items-center gap-2 h-full justify-center nav-text lg:text-sm 2xl:text-2xl">
                                 <FaPhoneAlt className="text-[#d9821b]" /> <span className="font-extrabold">(866) 419-4117</span>
                             </Link>
                         </li>
-                        <li className={`navBorder w-2/4 ${path === "/about-us" && "active"}`}>
+                        <li className={`navBorder h-full w-2/4 ${path === "/about-us" && "active"}`}>
                             <Link href="/about-us" className="flex items-center gap-2 h-full justify-center nav-text">
                                 About Us
                             </Link>
                         </li>
-                        <li className={`navBorder w-2/4 ${path === "/our-process" && "active"}`}>
+                        <li className={`navBorder h-full w-2/4 ${path === "/our-process" && "active"}`}>
                             <Link href="/our-process" className="flex items-center gap-2 h-full justify-center nav-text">
                                 Our Process
                             </Link>
                         </li>
-                        <li className={`navBorder w-2/4 ${path === "/blog" && "active"}`}>
+                        <li className={`navBorder h-full w-2/4 ${path === "/blog" && "active"}`}>
                             <Link href="/blog" className="flex items-center gap-2 h-full justify-center nav-text">
                                 Blog
                             </Link>
                         </li>
-                        <li className={`navBorder w-2/4 ${path === "/faq" && "active"}`}>
+                        <li className={`navBorder h-full w-2/4 ${path === "/faq" && "active"}`}>
                             <Link href="/faq" className="flex items-center gap-2 h-full justify-center nav-text">
                                 FAQ
                             </Link>
                         </li>
-                        <li className='inline-flex items-center gap-8 pl-8 w-full justify-center'>
-                            <Link href="/" className="text-white bg-primary px-4 py-2 font-semibold text-sm hover:bg-[#9b5d12] transition-all duration-300 w-full text-center">
+                        <li className='inline-flex items-center gap-8 pl-8 w-full justify-center cursor-pointer' onClick={handleShake}>
+                            <div className="text-white bg-primary px-4 py-2 font-semibold text-sm hover:bg-[#9b5d12] transition-all duration-300 w-full text-center">
                                 Get My Free Offer
-                            </Link>
+                            </div>
 
                             <div className="w-20 2xl:w-full">
                                 <Image src={rating} alt='Rating' className='w-16' />

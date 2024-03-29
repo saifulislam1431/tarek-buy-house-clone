@@ -1,11 +1,21 @@
-import React from 'react';
+'use client'
+import React, { createContext, useState } from 'react';
+
+const ParentContext = createContext(null);
 
 const Provider = ({ children }) => {
+    const [shake, setShake] = useState(false);
+    const [searchOfferValue, setSearchOfferValue] = useState("");
     return (
-        <main>
+        <ParentContext.Provider value={{
+            shake,
+            setShake,
+            searchOfferValue,
+            setSearchOfferValue
+        }}>
             {children}
-        </main>
+        </ParentContext.Provider>
     );
 };
 
-export default Provider;
+export { Provider, ParentContext };

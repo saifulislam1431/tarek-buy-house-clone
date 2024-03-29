@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ThemeModeScript } from "flowbite-react";
-import Provider from "@/utils/Provider/Provider";
+import { Provider } from "@/utils/Provider/Provider";
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import Footer from "@/components/Shared/Footer/Footer";
 import { inter } from "./fonts";
@@ -19,16 +19,20 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
 
-        <header className="sticky top-0 z-50">
-          <Navbar />
-        </header>
+
 
         <Provider>
+          <header className="sticky top-0 z-50">
+            <Navbar />
+          </header>
+
           {children}
+
+          <Footer />
         </Provider>
 
 
-        <Footer />
+
       </body>
     </html>
   );

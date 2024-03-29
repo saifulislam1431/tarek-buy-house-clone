@@ -47,7 +47,7 @@ const Advantage = () => {
             </div>
 
             <div className='mt-14 flex items-center justify-center'>
-                <button className='w-60 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg'>Learn More</button>
+                <button className='w-60 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural'>Learn More</button>
             </div>
 
         </section>

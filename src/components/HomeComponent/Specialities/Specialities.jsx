@@ -50,7 +50,7 @@ const Specialities = () => {
 
                 </div>
 
-                <div className='w-full bg-white rounded shadow-lg'>
+                <div className='w-full bg-white rounded shadow-netural'>
                     <div className='w-full text-center py-4 bg-primary rounded-t'>
                         <h3 className='text-white font-semibold text-xl'>Tarek Buys Houses</h3>
                     </div>
@@ -134,7 +134,7 @@ const Specialities = () => {
 
 
             <div className='mt-20 flex items-center justify-center'>
-                <button className='w-72 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg'>Learn More</button>
+                <button className='w-72 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural'>Learn More</button>
             </div>
         </section>
     );

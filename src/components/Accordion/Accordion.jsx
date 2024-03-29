@@ -11,7 +11,7 @@ const Accordion = ({ sections, width }) => {
         setOpenIndex(index === openIndex ? -1 : index);
     };
     return (
-        <div className={`accordion w-full  mx-auto flex flex-col gap-4 bg-[rgb(245,245,245)] shadow-lg ${width ? width : "max-w-2xl"}`}>
+        <div className={`accordion w-full  mx-auto flex flex-col gap-4 bg-[rgb(245,245,245)] shadow-netural ${width ? width : "max-w-2xl"}`}>
             {sections?.map((section, index) => (
                 <div key={index} className="accordion-section cursor-pointer">
                     <div

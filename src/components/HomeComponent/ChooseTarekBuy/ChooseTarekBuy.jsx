@@ -7,12 +7,14 @@ import item5 from "../../../../public/assets/when choose/item5.png";
 import item6 from "../../../../public/assets/when choose/item6.webp";
 import Image from 'next/image';
 
-const ChooseTarekBuy = () => {
+const ChooseTarekBuy = ({ description }) => {
     return (
         <section className='my-32 text-center px-3'>
             <div>
                 <h1 className='font-bold text-3xl'>When You Should Choose Tarek Buys Houses</h1>
-                <p className='text-lg mt-4 max-w-4xl mx-auto'>At Tarek Buys Houses, we help homeowners that are having a hard time selling or need to sell fast. If you sell your outdated or distressed home to us, we’ll pay for all of the repairs and your real estate fees. From hassle-free home sales, to <span className='font-bold'>covering up to $10k in moving costs</span>, we’ve got your back.</p>
+                {
+                    description ? <p className='text-lg mt-4 max-w-4xl mx-auto'> {description} </p> : <p className='text-lg mt-4 max-w-4xl mx-auto'>At Tarek Buys Houses, we help homeowners that are having a hard time selling or need to sell fast. If you sell your outdated or distressed home to us, we’ll pay for all of the repairs and your real estate fees. From hassle-free home sales, to <span className='font-bold'>covering up to $10k in moving costs</span>, we’ve got your back.</p>
+                }
             </div>
 
             <div className='my-14 max-w-5xl mx-auto grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28'>

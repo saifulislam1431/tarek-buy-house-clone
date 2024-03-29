@@ -18,9 +18,9 @@ const FeaturedMarket = () => {
         <section className='my-20'>
             <h1 className='font-bold text-3xl text-[#4C4847] text-center'>Featured Markets</h1>
 
-            <div className='w-[97%] max-w-5xl mx-auto flex items-center justify-center gap-6 flex-col lg:flex-row mt-16'>
+            <div className='w-[90%]  mx-auto flex items-center justify-center gap-6 flex-col lg:flex-row mt-16'>
 
-                <Link href="#" className={`relative w-full lg:w-[350px] overflow-hidden`}>
+                <Link href="/we-buy-houses/orange-county-ca" className={`relative w-full overflow-hidden`}>
                     <div className={`w-full ${isHovered.id === "1" ? "hover-scale" : "hover-scale-normal"}`}>
                         <Image src={img1} alt='Town 1' />
                     </div>
@@ -32,7 +32,7 @@ const FeaturedMarket = () => {
                     </div>
                 </Link>
 
-                <Link href="#" className={`relative w-full lg:w-[350px] overflow-hidden`}>
+                <Link href="/we-buy-houses/los-angeles-ca" className={`relative w-full overflow-hidden`}>
                     <div className={`w-full ${isHovered.id === "2" ? "hover-scale" : "hover-scale-normal"}`}>
                         <Image src={img2} alt='Town 1' />
                     </div>
@@ -44,7 +44,7 @@ const FeaturedMarket = () => {
                     </div>
                 </Link>
 
-                <Link href="#" className={`relative w-full lg:w-[350px] overflow-hidden`}>
+                <Link href="/we-buy-houses/tulsa-ok" className={`relative w-full overflow-hidden`}>
                     <div className={`w-full ${isHovered.id === "3" ? "hover-scale" : "hover-scale-normal"}`}>
                         <Image src={img3} alt='Town 1' />
                     </div>

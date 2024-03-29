@@ -19,7 +19,7 @@ const ProcessBanner = () => {
                 </div>
 
                 <div className='mt-10'>
-                    <div className='relative border-8 shadow-lg w-full mx-auto'>
+                    <div className='relative border-8 shadow-netural w-full mx-auto'>
                         <Image src={thumb1} alt='Thumb1' />
                         <div className='absolute top-0 bg-neutral w-full h-full bg-opacity-10 flex items-center justify-center'>
                             <HouseOwnerVideo id="5" isOpen={true} url="https://www.youtube-nocookie.com/embed/eLBToOHBpO4?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1&amp;autoplay=1" />

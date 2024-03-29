@@ -74,7 +74,7 @@ const AboutPage = () => {
                 </div>
 
                 <div className='mt-6 flex items-center justify-center'>
-                    <button className='w-72 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg'>Get Started</button>
+                    <button className='w-72 text-center px-10 py-2 bg-base-100 border-2 border-primary rounded-md text-lg font-bold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural'>Get Started</button>
                 </div>
             </div>
 

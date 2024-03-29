@@ -28,7 +28,7 @@ const BlogPage = () => {
                             </p>
 
                             <div className='mt-8 flex items-center justify-center'>
-                                <button className='w-48 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md  font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg'>Read More</button>
+                                <button className='w-48 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md  font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural'>Read More</button>
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@ const BlogPage = () => {
                             </p>
 
                             <div className='mt-8 flex items-center justify-center'>
-                                <button className='w-48 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md  font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-lg'>Read More</button>
+                                <button className='w-48 text-center px-5 py-2 bg-base-100 border-2 border-primary rounded-md  font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-netural'>Read More</button>
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@ const BlogPage = () => {
                 </div>
 
                 <div className='lg:w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-center gap-7 mt-20'>
-                    <div className='lg:h-[650px] bg-white shadow-lg p-5 w-full'>
+                    <div className='lg:h-[650px] bg-white shadow-netural p-5 w-full'>
 
                         <div className="flex items-center flex-col text-center">
                             <h1 className="font-semibold text-2xl text-[#333]">What&apos;s New?</h1>
@@ -98,7 +98,7 @@ const BlogPage = () => {
 
                     </div>
 
-                    <div className='lg:h-[650px] bg-white shadow-lg p-5 w-full'>
+                    <div className='lg:h-[650px] bg-white shadow-netural p-5 w-full'>
 
                         <div className="flex items-center flex-col text-center">
                             <h1 className="font-semibold text-2xl text-[#333]">Most Popular</h1>
@@ -133,7 +133,7 @@ const BlogPage = () => {
 
                     </div>
 
-                    <div className='lg:h-[650px] bg-white shadow-lg p-5 w-full'>
+                    <div className='lg:h-[650px] bg-white shadow-netural p-5 w-full'>
 
                         <div className="flex items-center flex-col text-center">
                             <h1 className="font-semibold text-2xl text-[#333]">Our Picks</h1>
